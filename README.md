@@ -1,4 +1,4 @@
-# Hazard Reporting Backend
+# Aquasentra Backend
 
 A Node.js Express backend API for a hazard reporting system with JWT authentication and role-based access control.
 
