@@ -26,7 +26,12 @@ app.use('/reports', require('./routes/reports'));
 
 // Health check endpoint
 app.get('/', (req, res) => {
-  res.json({ message: 'Hazard Reporting API is running!' });
+  res.json({ message: 'Aquasentra API is running!' });
+});
+
+// POST endpoint for root path (if needed)
+app.post('/', (req, res) => {
+  res.json({ message: 'POST request received at root endpoint', body: req.body });
 });
 
 // Error handling middleware

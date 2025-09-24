@@ -24,3 +24,4 @@ router.get('/pending', authMiddleware, roleMiddleware(['verifier']), getPendingR
 router.patch('/:id/verify', authMiddleware, roleMiddleware(['verifier']), verifyReportValidation, verifyReport);
 
 module.exports = router;
+  
